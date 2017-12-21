@@ -1,0 +1,237 @@
+2017-09-25
+GprinterSDK
+
+ v1.0.0
+-GprinterBluetooth.h
+
+
+方法：
+
+1.+ (instancetype)sharedInstance
+
+类文件之初始化（逻辑层的分享）
+2.- (void)startScanPerpheralTimeout:(NSTimeInterval)timeout;
+
+扫描蓝牙，timeout则是自己设置，代表扫描时间的意思，设置为0便会一直扫描
+
+
+3.- (void)startScanPerpheralTimeout:(NSTimeInterval)timeout Success:(ScanPerpheralSuccess)success failure:(ScanPerpheralFailure)failure;
+
+扫描蓝牙，但是有成功的回调和失败的回调
+
+
+4.- (void)stopScan;
+
+终止扫描的方法
+
+5.- (void)connectPeripheral:(CBPeripheral *)peripheral;
+
+连接蓝牙的方法，peripheral是要连接的蓝牙
+
+
+6.- (void)connectPeripheral:(CBPeripheral *)peripheral completion:(ConnectCompletion)completion;
+
+连接蓝牙的方法，有回调，completion是完成后的回调
+
+
+7.- (void)cancelPeripheral:(CBPeripheral *)peripheral;
+
+取消某个蓝牙外设的连接
+
+
+8.- (void)isDisconnect:(Disconnect)disconnectBlock;
+
+断开蓝牙设备的脸连接
+
+
+9.- (void)sendPrintData:(NSData *)data completion:(PrintResult)result;
+
+发送想要给打印机的数据组合
+
+10.-(void)SearchBlueToothPrinterStatus:(int)n;
+
+查询蓝牙打印机状态 ， n取值1~2（1.连接状态，2：缺纸or开盖的情况）
+
+
+11.-(void)SearchBlueToothPrinterModelNum;
+
+查询蓝牙机型
+
+
+
+
+-GprinterReceiptCommand.h
+
+1.-(instancetype)OpenPort:(NSString*)host port:(UInt16)port timeout:(NSTimeInterval)timeout;
+Socket连接打印机设备
+
+2.- (void)ClosePort;
+
+断开连接
+
+
+3.- (void)basicSetting;
+
+基础设置(包括初始化，设置标准模式，横纵向异动单位，默认行距，设置字号)
+
+
+4.- (void)addText:(NSString *)text;
+
+打印文字
+
+
+5.一维码（条形码）
+①-(void)addBarCodeWithWidth:(int)w Height:(int)h Position:(int)p Type:(int)type String:(NSString*)string Alignment:(AlignmentType)alignment;
+
+打印条形码，Position 是显示条码数字（0：不显示，1显示在上面，2显示在下面，3上下两边都显示）type可取值为65，67，68，69，70，71，72，Alignment：选择左中右
+
+
+
+②-(void)addCode128WithWidth:(int)w Height:(int)h Position:(int)p CodeType:(CODE128Type)type String:(NSString*)string Alignment:(AlignmentType)alignment;
+
+Code128是比较特殊的条形码之一，codeType只有codeA,codeB,codeC三种选择
+
+
+
+③-(void)addUPC_EWithWidth:(int)w Height:(int)h Position:(int)p String:(NSString*)string Alignment:(AlignmentType)alignment;
+
+UPC-E是需要特殊处理条码之一，string不能超过6位，内部已做好处理
+
+6.- (void)addPicture:(UIImage *)image Alignment:(AlignmentType)alignment maxWidth:(CGFloat)maxWidth;
+
+打印图片，maxwidth决定最大宽度，若图片本身超过这个数值的话，将被裁剪成这个数值的大小
+
+7.二维码（QRCode）
+①-(void)addQRCodeWithInfo:(NSString *)info size:(NSInteger)size alignment:(AlignmentType)alignment;
+ 指令打印二维码【BUG已修改，可以打纯中文，纯英文，中英文混合的字符串】
+
+②-(void)addQRcodeAsImage:(NSString*)str alignment:(AlignmentType)alignment;
+ 有些打印机可能不支持指令打印二维码，可以用图片模式打印
+
+8.钱箱
+①- (void)OpenCashDrawerOne;
+
+②- (void)OpenCashDrawerTwo;
+
+打开钱箱
+
+
+
+
+9.-(void)addCut;
+
+切纸
+
+
+
+10.打印范例
+①-(void)PrintSampleOne;
+ 打印范例一
+
+ 
+②-(void)PrintSampleTwo;
+打印范例二
+
+
+
+
+
+11.- (void)SendToThePrinter;
+
+最终将所有要打印的数据通过此方法发送给打印机
+
+
+
+12.-(void)SearchTheModelNum;
+
+查询打印机的机型号
+
+
+13.-(void)SearchPrinterStatus:(int)n;
+ 查询连接状态（n=1）查询缺纸or开盖（这些只有在连接成功的状态下才有弹出提示框，若没反应则就是没有）
+
+
+
+
+
+-GprinterReceiptCheckCommand.h
+（查询wifi+网口打印机的状态）
+
+
+//连接
+-(instancetype)OpenPort:(NSString*)host port:(UInt16)port timeout:(NSTimeInterval)timeout;
+
+
+//断开
+- (void)ClosePort;
+
+//查询机型
+-(void)SearchTheModelNum;
+
+
+
+//查询打印机状态
+-(void)SearchPrinterStatus:(int)n;
+
+
+
+//发送请求
+- (void)SendToPrinter;
+
+
+
+
+
+
+-GprinterLabelCommand.h
+（条码打印机）
+
+枚举（用来限定限定范围，客户按照要求输入）
+1.浓度typedef enum {DNESITY0 = 0,DNESITY1 = 1,DNESITY2 = 2,DNESITY3 = 3,DNESITY4 = 4,DNESITY5 = 5,DNESITY6 = 6,DNESITY7 = 7,DNESITY8 = 8,DNESITY9 = 9,DNESITY10 = 10,DNESITY11 = 11,DNESITY12 = 12,DNESITY13 = 13,DNESITY14 = 14,DNESITY15 = 15,}DNESITY;
+2.条码的可读性typedef enum {DISABLE = 0,EANBEL = 1,}READABLE;
+3.旋转角度typedef enum {ROTATION_0 = 0,ROTATION_90 = 90,ROTATION_180 =180,ROTATION_270 = 270,}ROTATION;
+4.打印速度typedef enum {SPEED1 = 1,SPEED2 = 2,SPEED3 = 3,SPEED4 = 4,SPEED5 = 5,SPEED6 = 6,}SPEED;
+5. 打印方向typedef enum {FORWARD = 0,BACKWARD = 1,}DIRECTION;
+6.选择传感器类型（方法）typedef enum {GAP = 0,BLINE = 1,}SENSOR;
+7.打印图片的modetypedef enum {OVERWRITE = 0,OR = 1,XOR = 2,}BITMAPMODE;
+8.字体水平/垂直扩大倍数typedef enum {MUL_1 = 1,MUL_2 = 2,MUL_3 = 3,MUL_4 = 4,MUL_5 = 5,MUL_6 = 6,MUL_7 = 7,MUL_8 = 8,MUL_9 = 9,MUL_10 = 10,}FONTMAGNIFICATION;
+9. 国际字符集typedef enum {//437: United States//850: Multilingual//852: Slavic//860: Portuguese//863: Canadian/French 865: Nordic//Windows code page 1250: Central Europe 1252: Latin I//1253: Greek//1254: TurkishC437 = 437,C850 = 850,C852 = 852,C860 = 860,C863 = 863,C865 = 865,WC1250 = 1250,WC1252 = 1252,WC1253 = 1253,WC1254 = 1254,}CODEPAGE;
+10. 字型名称typedef NS_ENUM (NSUInteger,FontType){FONT_1 = 1,FONT_2 = 2,FONT_3 = 3,FONT_4 = 4,FONT_5 = 5,FONT_6 = 6,FONT_7 = 7,FONT_8 = 8,//SIMPLIFIED_CHINESE("TSS24.BF2"),//TRADITIONAL_CHINESE("TST24.BF2"),//KOREAN("K"),SIMPLIFIED_CHINESE = 9 ,TRADITIONAL_CHINESE = 10,KOREAN = 11,};
+11.条码类型typedef NS_ENUM (NSUInteger,BarColorType) {CODE128=1,CODE128M=2,EAN128=3,ITF25=4,ITF25C=5,CODE39=6,CODE39C=7,CODE93 = 9,EAN13 = 10,EAN13_2 = 11,EAN13_5 = 12,EAN8 = 13,EAN8_2 = 14,EAN8_5 = 15,CODABAR = 16,POST = 17,UPCA = 18,UPCA_2 = 19,UPCA_5 = 20,UPCE = 21,UPCE_2 = 22,UPCE_5 = 23,MSI = 25,MSIC = 26,PLESSEY = 27,ITF14 = 28,EAN14 = 29, // CODE128 = "128",//CODE128M("128M"),//EAN128("EAN128"),//ITF25("25"),//ITF25C("25C"),//CODE39("39"),//CODE39C("39C"),//CODE39S("39S"),//CODE93("93"),//EAN13("EAN13"),//EAN13_2("EAN13+2"),//EAN13_5("EAN13+5"),//EAN8("EAN8"),//EAN8_2("EAN8+2"),//EAN8_5("EAN8+5"),//CODABAR("CODA"),//POST("POST"),//UPCA("UPCA"),//UPCA_2("UPCA+2"),//UPCA_5("UPCA+5"),//UPCE("UPCE13"),//UPCE_2("UPCE13+2"),//UPCE_5("UPCE13+5"),//CPOST("CPOST"),//MSI("MSI"),//MSIC("MSIC"),//PLESSEY("PLESSEY"),//ITF14("ITF14"),//EAN14("EAN14");};
+12.二维码纠错等级typedef NS_ENUM (NSUInteger,QRcodeLevel){//LEVEL_L("L"),//LEVEL_M("M"),//LEVEL_Q("Q"),//LEVEL_H("H");LEVEL_L= 1,LEVEL_M= 2,LEVEL_Q= 3,LEVEL_H= 4,};
+
+//1.连接-(instancetype)ConnectPort:(NSString*)host port:(UInt16)port timeout:(NSTimeInterval)timeout;
+
+
+//2.断开- (void)disConnectPort;
+
+
+//3.发送给打印机-(void)sendToPrinter;
+
+
+//4.初始化-(void)setupForWidth:(NSString*)w heigth:(NSString*)h speed:(SPEED)sp density:(DNESITY)den sensor:(SENSOR)string vertical:(NSString*)ver offset:(NSString*)off;
+
+//5.打印文字-(void)printerfontFormX:(NSString*)x Y:(NSString*)y fontName:(FontType)fonttype rotation:(ROTATION)rotation magnificationRateX:(FONTMAGNIFICATION)mx magnificationRateY:(FONTMAGNIFICATION)my content:(NSString*)text;
+
+//6.条形码-(void)barcodeFromX:(NSString*)x Y:(NSString*)y barcodeType:(BarColorType)barcodetype height:(NSString*)h readable:(READABLE)readable rotation:(ROTATION)ro narrow:(NSString*)narrow wide:(NSString*)wide code:(NSString*)codetext;
+
+//7.二维码-(void)QRCodeWithX:(NSString*)x Y:(NSString*)y ECClevel:(QRcodeLevel)qrlevel cellwidth:(NSString*)cw Mode:(NSString*)m rotation:(ROTATION)rotation model:(NSString*)model mask:(NSString*)mask code:(NSString*)codetext;
+
+//8.矩形-(void)Box:(NSString*)x y:(NSString*)y xend:(NSString*)w yend:(NSString*)h thickness:(NSString*)line;
+
+//9.下划线-(void)Bar:(NSString*)x y:(NSString*)y width:(NSString*)w height:(NSString*)h;
+
+//10.打印图片-(void)PrintPictureWithX:(NSString*)x Y:(NSString*)y mode:(BITMAPMODE)m Image:(UIImage*)img;
+
+//11.打印份数-(void)printLabelWithNumberOfSets:(NSString*)m copies:(NSString*)n;
+
+//12.发送指令-(void)sendcommand:(NSString*)commandText;
+
+//13.十六进制-(void)sendcommandData:(NSData*)commandtextData;
+
+//14.CLS-(void)clearBuffer;
+
+//15.formfeed-(void)FormFeed;
+
+//16.打印方向-(void)Direction:(NSString*)d;
+

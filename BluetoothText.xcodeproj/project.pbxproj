@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4836D1AB1FDE29C900526BE2 /* NSArray+ ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836D1A51FDE29C800526BE2 /* NSArray+ ZXPUnicode.m */; };
+		4836D1AC1FDE29C900526BE2 /* NSDictionary+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836D1A81FDE29C800526BE2 /* NSDictionary+ZXPUnicode.m */; };
+		4836D1AD1FDE29C900526BE2 /* NSObject+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836D1AA1FDE29C800526BE2 /* NSObject+ZXPUnicode.m */; };
+		4836D1AF1FDE29E500526BE2 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836D1AE1FDE29E500526BE2 /* NullSafe.m */; };
+		489B0B831FD8D27700BD00C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0B821FD8D27700BD00C7 /* AppDelegate.m */; };
+		489B0B861FD8D27700BD00C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0B851FD8D27700BD00C7 /* ViewController.m */; };
+		489B0B891FD8D27700BD00C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489B0B871FD8D27700BD00C7 /* Main.storyboard */; };
+		489B0B8B1FD8D27700BD00C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489B0B8A1FD8D27700BD00C7 /* Assets.xcassets */; };
+		489B0B8E1FD8D27700BD00C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489B0B8C1FD8D27700BD00C7 /* LaunchScreen.storyboard */; };
+		489B0B911FD8D27700BD00C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0B901FD8D27700BD00C7 /* main.m */; };
+		489B0B9B1FD8D27700BD00C7 /* BluetoothTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0B9A1FD8D27700BD00C7 /* BluetoothTextTests.m */; };
+		489B0BA61FD8D27700BD00C7 /* BluetoothTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0BA51FD8D27700BD00C7 /* BluetoothTextUITests.m */; };
+		489B0BC01FD8D46A00BD00C7 /* BluetoothListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0BBF1FD8D46A00BD00C7 /* BluetoothListViewController.m */; };
+		489B0BE61FD9136000BD00C7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0BD91FD9135F00BD00C7 /* SVIndefiniteAnimatedView.m */; };
+		489B0BE71FD9136000BD00C7 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0BDB1FD9135F00BD00C7 /* SVProgressAnimatedView.m */; };
+		489B0BE81FD9136000BD00C7 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 489B0BDD1FD9135F00BD00C7 /* SVProgressHUD.bundle */; };
+		489B0BE91FD9136000BD00C7 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0BDF1FD9135F00BD00C7 /* SVProgressHUD.m */; };
+		489B0BEA1FD9136000BD00C7 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0BE11FD9135F00BD00C7 /* SVRadialGradientLayer.m */; };
+		489B0C0E1FD92AFE00BD00C7 /* HLPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0C061FD92AFE00BD00C7 /* HLPrinter.m */; };
+		489B0C0F1FD92AFE00BD00C7 /* SEPrinterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0C091FD92AFE00BD00C7 /* SEPrinterManager.m */; };
+		489B0C101FD92AFE00BD00C7 /* UIImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0C0B1FD92AFE00BD00C7 /* UIImage+Bitmap.m */; };
+		489B0C111FD92AFE00BD00C7 /* UIWebView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0C0D1FD92AFE00BD00C7 /* UIWebView+UIImage.m */; };
+		489B0C131FD9406B00BD00C7 /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = 489B0C121FD9406B00BD00C7 /* app.json */; };
+		489B0C171FD94CF200BD00C7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B0C161FD94CF100BD00C7 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		489B0B971FD8D27700BD00C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489B0B761FD8D27700BD00C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 489B0B7D1FD8D27700BD00C7;
+			remoteInfo = BluetoothText;
+		};
+		489B0BA21FD8D27700BD00C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489B0B761FD8D27700BD00C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 489B0B7D1FD8D27700BD00C7;
+			remoteInfo = BluetoothText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4836D1A51FDE29C800526BE2 /* NSArray+ ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ ZXPUnicode.m"; sourceTree = "<group>"; };
+		4836D1A61FDE29C800526BE2 /* NSArray+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZXPUnicode.h"; sourceTree = "<group>"; };
+		4836D1A71FDE29C800526BE2 /* NSDictionary+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXPUnicode.h"; sourceTree = "<group>"; };
+		4836D1A81FDE29C800526BE2 /* NSDictionary+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXPUnicode.m"; sourceTree = "<group>"; };
+		4836D1A91FDE29C800526BE2 /* NSObject+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXPUnicode.h"; sourceTree = "<group>"; };
+		4836D1AA1FDE29C800526BE2 /* NSObject+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXPUnicode.m"; sourceTree = "<group>"; };
+		4836D1AE1FDE29E500526BE2 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		489B0B7E1FD8D27700BD00C7 /* BluetoothText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		489B0B811FD8D27700BD00C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		489B0B821FD8D27700BD00C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		489B0B841FD8D27700BD00C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		489B0B851FD8D27700BD00C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		489B0B881FD8D27700BD00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		489B0B8A1FD8D27700BD00C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		489B0B8D1FD8D27700BD00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		489B0B8F1FD8D27700BD00C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489B0B901FD8D27700BD00C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		489B0B961FD8D27700BD00C7 /* BluetoothTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		489B0B9A1FD8D27700BD00C7 /* BluetoothTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothTextTests.m; sourceTree = "<group>"; };
+		489B0B9C1FD8D27700BD00C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489B0BA11FD8D27700BD00C7 /* BluetoothTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		489B0BA51FD8D27700BD00C7 /* BluetoothTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothTextUITests.m; sourceTree = "<group>"; };
+		489B0BA71FD8D27700BD00C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489B0BBE1FD8D46A00BD00C7 /* BluetoothListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothListViewController.h; sourceTree = "<group>"; };
+		489B0BBF1FD8D46A00BD00C7 /* BluetoothListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothListViewController.m; sourceTree = "<group>"; };
+		489B0BD81FD9135F00BD00C7 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		489B0BD91FD9135F00BD00C7 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		489B0BDA1FD9135F00BD00C7 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		489B0BDB1FD9135F00BD00C7 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		489B0BDC1FD9135F00BD00C7 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		489B0BDD1FD9135F00BD00C7 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		489B0BDE1FD9135F00BD00C7 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		489B0BDF1FD9135F00BD00C7 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		489B0BE01FD9135F00BD00C7 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		489B0BE11FD9135F00BD00C7 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		489B0C051FD92AFE00BD00C7 /* HLPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLPrinter.h; sourceTree = "<group>"; };
+		489B0C061FD92AFE00BD00C7 /* HLPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLPrinter.m; sourceTree = "<group>"; };
+		489B0C071FD92AFE00BD00C7 /* SEBLEConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBLEConst.h; sourceTree = "<group>"; };
+		489B0C081FD92AFE00BD00C7 /* SEPrinterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPrinterManager.h; sourceTree = "<group>"; };
+		489B0C091FD92AFE00BD00C7 /* SEPrinterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPrinterManager.m; sourceTree = "<group>"; };
+		489B0C0A1FD92AFE00BD00C7 /* UIImage+Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bitmap.h"; sourceTree = "<group>"; };
+		489B0C0B1FD92AFE00BD00C7 /* UIImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bitmap.m"; sourceTree = "<group>"; };
+		489B0C0C1FD92AFE00BD00C7 /* UIWebView+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+UIImage.h"; sourceTree = "<group>"; };
+		489B0C0D1FD92AFE00BD00C7 /* UIWebView+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+UIImage.m"; sourceTree = "<group>"; };
+		489B0C121FD9406B00BD00C7 /* app.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = app.json; sourceTree = "<group>"; };
+		489B0C151FD94CF100BD00C7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		489B0C161FD94CF100BD00C7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		489B0B7B1FD8D27700BD00C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		489B0B931FD8D27700BD00C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		489B0B9E1FD8D27700BD00C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4836D1A41FDE29C800526BE2 /* ZXPUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				4836D1AE1FDE29E500526BE2 /* NullSafe.m */,
+				4836D1A51FDE29C800526BE2 /* NSArray+ ZXPUnicode.m */,
+				4836D1A61FDE29C800526BE2 /* NSArray+ZXPUnicode.h */,
+				4836D1A71FDE29C800526BE2 /* NSDictionary+ZXPUnicode.h */,
+				4836D1A81FDE29C800526BE2 /* NSDictionary+ZXPUnicode.m */,
+				4836D1A91FDE29C800526BE2 /* NSObject+ZXPUnicode.h */,
+				4836D1AA1FDE29C800526BE2 /* NSObject+ZXPUnicode.m */,
+			);
+			path = ZXPUnicode;
+			sourceTree = "<group>";
+		};
+		489B0B751FD8D27700BD00C7 = {
+			isa = PBXGroup;
+			children = (
+				489B0B801FD8D27700BD00C7 /* BluetoothText */,
+				489B0B991FD8D27700BD00C7 /* BluetoothTextTests */,
+				489B0BA41FD8D27700BD00C7 /* BluetoothTextUITests */,
+				489B0B7F1FD8D27700BD00C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		489B0B7F1FD8D27700BD00C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				489B0B7E1FD8D27700BD00C7 /* BluetoothText.app */,
+				489B0B961FD8D27700BD00C7 /* BluetoothTextTests.xctest */,
+				489B0BA11FD8D27700BD00C7 /* BluetoothTextUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		489B0B801FD8D27700BD00C7 /* BluetoothText */ = {
+			isa = PBXGroup;
+			children = (
+				489B0C121FD9406B00BD00C7 /* app.json */,
+				489B0B811FD8D27700BD00C7 /* AppDelegate.h */,
+				489B0B821FD8D27700BD00C7 /* AppDelegate.m */,
+				489B0B841FD8D27700BD00C7 /* ViewController.h */,
+				489B0B851FD8D27700BD00C7 /* ViewController.m */,
+				489B0BBE1FD8D46A00BD00C7 /* BluetoothListViewController.h */,
+				489B0BBF1FD8D46A00BD00C7 /* BluetoothListViewController.m */,
+				4836D1A41FDE29C800526BE2 /* ZXPUnicode */,
+				489B0C141FD94CF100BD00C7 /* JSONKit */,
+				489B0C041FD92AFE00BD00C7 /* BLEPrinter */,
+				489B0BD71FD9135F00BD00C7 /* SVProgressHUD */,
+				489B0B871FD8D27700BD00C7 /* Main.storyboard */,
+				489B0B8A1FD8D27700BD00C7 /* Assets.xcassets */,
+				489B0B8C1FD8D27700BD00C7 /* LaunchScreen.storyboard */,
+				489B0B8F1FD8D27700BD00C7 /* Info.plist */,
+				489B0B901FD8D27700BD00C7 /* main.m */,
+			);
+			path = BluetoothText;
+			sourceTree = "<group>";
+		};
+		489B0B991FD8D27700BD00C7 /* BluetoothTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				489B0B9A1FD8D27700BD00C7 /* BluetoothTextTests.m */,
+				489B0B9C1FD8D27700BD00C7 /* Info.plist */,
+			);
+			path = BluetoothTextTests;
+			sourceTree = "<group>";
+		};
+		489B0BA41FD8D27700BD00C7 /* BluetoothTextUITests */ = {
+			isa = PBXGroup;
+			children = (
+				489B0BA51FD8D27700BD00C7 /* BluetoothTextUITests.m */,
+				489B0BA71FD8D27700BD00C7 /* Info.plist */,
+			);
+			path = BluetoothTextUITests;
+			sourceTree = "<group>";
+		};
+		489B0BD71FD9135F00BD00C7 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				489B0BD81FD9135F00BD00C7 /* SVIndefiniteAnimatedView.h */,
+				489B0BD91FD9135F00BD00C7 /* SVIndefiniteAnimatedView.m */,
+				489B0BDA1FD9135F00BD00C7 /* SVProgressAnimatedView.h */,
+				489B0BDB1FD9135F00BD00C7 /* SVProgressAnimatedView.m */,
+				489B0BDC1FD9135F00BD00C7 /* SVProgressHUD-Prefix.pch */,
+				489B0BDD1FD9135F00BD00C7 /* SVProgressHUD.bundle */,
+				489B0BDE1FD9135F00BD00C7 /* SVProgressHUD.h */,
+				489B0BDF1FD9135F00BD00C7 /* SVProgressHUD.m */,
+				489B0BE01FD9135F00BD00C7 /* SVRadialGradientLayer.h */,
+				489B0BE11FD9135F00BD00C7 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		489B0C041FD92AFE00BD00C7 /* BLEPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				489B0C051FD92AFE00BD00C7 /* HLPrinter.h */,
+				489B0C061FD92AFE00BD00C7 /* HLPrinter.m */,
+				489B0C071FD92AFE00BD00C7 /* SEBLEConst.h */,
+				489B0C081FD92AFE00BD00C7 /* SEPrinterManager.h */,
+				489B0C091FD92AFE00BD00C7 /* SEPrinterManager.m */,
+				489B0C0A1FD92AFE00BD00C7 /* UIImage+Bitmap.h */,
+				489B0C0B1FD92AFE00BD00C7 /* UIImage+Bitmap.m */,
+				489B0C0C1FD92AFE00BD00C7 /* UIWebView+UIImage.h */,
+				489B0C0D1FD92AFE00BD00C7 /* UIWebView+UIImage.m */,
+			);
+			path = BLEPrinter;
+			sourceTree = "<group>";
+		};
+		489B0C141FD94CF100BD00C7 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				489B0C151FD94CF100BD00C7 /* JSONKit.h */,
+				489B0C161FD94CF100BD00C7 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		489B0B7D1FD8D27700BD00C7 /* BluetoothText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 489B0BAA1FD8D27700BD00C7 /* Build configuration list for PBXNativeTarget "BluetoothText" */;
+			buildPhases = (
+				489B0B7A1FD8D27700BD00C7 /* Sources */,
+				489B0B7B1FD8D27700BD00C7 /* Frameworks */,
+				489B0B7C1FD8D27700BD00C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothText;
+			productName = BluetoothText;
+			productReference = 489B0B7E1FD8D27700BD00C7 /* BluetoothText.app */;
+			productType = "com.apple.product-type.application";
+		};
+		489B0B951FD8D27700BD00C7 /* BluetoothTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 489B0BAD1FD8D27700BD00C7 /* Build configuration list for PBXNativeTarget "BluetoothTextTests" */;
+			buildPhases = (
+				489B0B921FD8D27700BD00C7 /* Sources */,
+				489B0B931FD8D27700BD00C7 /* Frameworks */,
+				489B0B941FD8D27700BD00C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				489B0B981FD8D27700BD00C7 /* PBXTargetDependency */,
+			);
+			name = BluetoothTextTests;
+			productName = BluetoothTextTests;
+			productReference = 489B0B961FD8D27700BD00C7 /* BluetoothTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		489B0BA01FD8D27700BD00C7 /* BluetoothTextUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 489B0BB01FD8D27700BD00C7 /* Build configuration list for PBXNativeTarget "BluetoothTextUITests" */;
+			buildPhases = (
+				489B0B9D1FD8D27700BD00C7 /* Sources */,
+				489B0B9E1FD8D27700BD00C7 /* Frameworks */,
+				489B0B9F1FD8D27700BD00C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				489B0BA31FD8D27700BD00C7 /* PBXTargetDependency */,
+			);
+			name = BluetoothTextUITests;
+			productName = BluetoothTextUITests;
+			productReference = 489B0BA11FD8D27700BD00C7 /* BluetoothTextUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		489B0B761FD8D27700BD00C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JK;
+				TargetAttributes = {
+					489B0B7D1FD8D27700BD00C7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					489B0B951FD8D27700BD00C7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 489B0B7D1FD8D27700BD00C7;
+					};
+					489B0BA01FD8D27700BD00C7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 489B0B7D1FD8D27700BD00C7;
+					};
+				};
+			};
+			buildConfigurationList = 489B0B791FD8D27700BD00C7 /* Build configuration list for PBXProject "BluetoothText" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 489B0B751FD8D27700BD00C7;
+			productRefGroup = 489B0B7F1FD8D27700BD00C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				489B0B7D1FD8D27700BD00C7 /* BluetoothText */,
+				489B0B951FD8D27700BD00C7 /* BluetoothTextTests */,
+				489B0BA01FD8D27700BD00C7 /* BluetoothTextUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		489B0B7C1FD8D27700BD00C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489B0BE81FD9136000BD00C7 /* SVProgressHUD.bundle in Resources */,
+				489B0B8E1FD8D27700BD00C7 /* LaunchScreen.storyboard in Resources */,
+				489B0B8B1FD8D27700BD00C7 /* Assets.xcassets in Resources */,
+				489B0C131FD9406B00BD00C7 /* app.json in Resources */,
+				489B0B891FD8D27700BD00C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		489B0B941FD8D27700BD00C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		489B0B9F1FD8D27700BD00C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		489B0B7A1FD8D27700BD00C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4836D1AF1FDE29E500526BE2 /* NullSafe.m in Sources */,
+				489B0C0F1FD92AFE00BD00C7 /* SEPrinterManager.m in Sources */,
+				489B0C111FD92AFE00BD00C7 /* UIWebView+UIImage.m in Sources */,
+				4836D1AC1FDE29C900526BE2 /* NSDictionary+ZXPUnicode.m in Sources */,
+				489B0BE71FD9136000BD00C7 /* SVProgressAnimatedView.m in Sources */,
+				489B0C101FD92AFE00BD00C7 /* UIImage+Bitmap.m in Sources */,
+				489B0BE61FD9136000BD00C7 /* SVIndefiniteAnimatedView.m in Sources */,
+				489B0B861FD8D27700BD00C7 /* ViewController.m in Sources */,
+				489B0C171FD94CF200BD00C7 /* JSONKit.m in Sources */,
+				489B0C0E1FD92AFE00BD00C7 /* HLPrinter.m in Sources */,
+				489B0BC01FD8D46A00BD00C7 /* BluetoothListViewController.m in Sources */,
+				489B0BEA1FD9136000BD00C7 /* SVRadialGradientLayer.m in Sources */,
+				489B0B911FD8D27700BD00C7 /* main.m in Sources */,
+				4836D1AD1FDE29C900526BE2 /* NSObject+ZXPUnicode.m in Sources */,
+				489B0B831FD8D27700BD00C7 /* AppDelegate.m in Sources */,
+				4836D1AB1FDE29C900526BE2 /* NSArray+ ZXPUnicode.m in Sources */,
+				489B0BE91FD9136000BD00C7 /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		489B0B921FD8D27700BD00C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489B0B9B1FD8D27700BD00C7 /* BluetoothTextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		489B0B9D1FD8D27700BD00C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489B0BA61FD8D27700BD00C7 /* BluetoothTextUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		489B0B981FD8D27700BD00C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 489B0B7D1FD8D27700BD00C7 /* BluetoothText */;
+			targetProxy = 489B0B971FD8D27700BD00C7 /* PBXContainerItemProxy */;
+		};
+		489B0BA31FD8D27700BD00C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 489B0B7D1FD8D27700BD00C7 /* BluetoothText */;
+			targetProxy = 489B0BA21FD8D27700BD00C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		489B0B871FD8D27700BD00C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				489B0B881FD8D27700BD00C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		489B0B8C1FD8D27700BD00C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				489B0B8D1FD8D27700BD00C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		489B0BA81FD8D27700BD00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		489B0BA91FD8D27700BD00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		489B0BAB1FD8D27700BD00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KVVYS4U5HE;
+				INFOPLIST_FILE = BluetoothText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BluetoothText/GprinterSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangshuilu.BluetoothText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		489B0BAC1FD8D27700BD00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KVVYS4U5HE;
+				INFOPLIST_FILE = BluetoothText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BluetoothText/GprinterSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wangshuilu.BluetoothText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		489B0BAE1FD8D27700BD00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BluetoothTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangshuilu.BluetoothTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothText.app/BluetoothText";
+			};
+			name = Debug;
+		};
+		489B0BAF1FD8D27700BD00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BluetoothTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangshuilu.BluetoothTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothText.app/BluetoothText";
+			};
+			name = Release;
+		};
+		489B0BB11FD8D27700BD00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BluetoothTextUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangshuilu.BluetoothTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BluetoothText;
+			};
+			name = Debug;
+		};
+		489B0BB21FD8D27700BD00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BluetoothTextUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangshuilu.BluetoothTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BluetoothText;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		489B0B791FD8D27700BD00C7 /* Build configuration list for PBXProject "BluetoothText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489B0BA81FD8D27700BD00C7 /* Debug */,
+				489B0BA91FD8D27700BD00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		489B0BAA1FD8D27700BD00C7 /* Build configuration list for PBXNativeTarget "BluetoothText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489B0BAB1FD8D27700BD00C7 /* Debug */,
+				489B0BAC1FD8D27700BD00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		489B0BAD1FD8D27700BD00C7 /* Build configuration list for PBXNativeTarget "BluetoothTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489B0BAE1FD8D27700BD00C7 /* Debug */,
+				489B0BAF1FD8D27700BD00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		489B0BB01FD8D27700BD00C7 /* Build configuration list for PBXNativeTarget "BluetoothTextUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489B0BB11FD8D27700BD00C7 /* Debug */,
+				489B0BB21FD8D27700BD00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 489B0B761FD8D27700BD00C7 /* Project object */;
+}
