@@ -49,15 +49,13 @@
 - (HLPrinter *)getPrinterWith:(id)Object
 {
     HLPrinter *printer = [[HLPrinter alloc] init];
-
     //读取本地的json数据
     NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app" ofType:@"json"]];
     NSDictionary *datadic = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableLeaves error:nil];
 
     //店铺信息
     NSArray * ShopInfos = datadic[@"ShopInfos"];
-
-    [printer appendImage:[UIImage imageNamed:@"ico180"] alignment:HLTextAlignmentCenter maxWidth:300];
+    [printer appendImage:[UIImage imageNamed:@"ico180"] alignment:HLTextAlignmentCenter maxWidth:300];//图片大小
     NSString *title = datadic[@"ShopName"];
     NSString *str1 = datadic[@"ShopPhone"];
     [printer appendText:title alignment:HLTextAlignmentCenter fontSize:HLFontSizeTitleMiddle];
@@ -66,45 +64,35 @@
     for (int i= 0; i<ShopInfos.count; i++) {
         [printer appendText:ShopInfos[i] alignment:HLTextAlignmentLeft];
     }
-
-    [printer appendNewLine];
+    [printer appendNewLine];//换行，打印空白行
 
     //商品规格信息
     NSArray * GoodsAttributes = datadic[@"GoodsAttributes"];
     [printer appendLeftTextArray:GoodsAttributes];
-
     //商品信息
     NSArray * GoodsProducts = datadic[@"GoodsProducts"];
-
 
     for (NSString *goodsInfo in GoodsProducts) {
         [printer appendText:goodsInfo alignment:HLTextAlignmentLeft];
     }
-
     [printer appendNewLine];
 
     //支付信息
     NSArray * PayInfos = datadic[@"PayInfos"];
 
     for (int i=0; i< PayInfos.count; i++){
-        [printer appendText:PayInfos[i] alignment:HLTextAlignmentLeft offSet:200];
+        [printer appendText:PayInfos[i] alignment:HLTextAlignmentLeft offSet:200];//偏移量
     }
-
-
     [printer appendSeperatorLine];
 
     [printer appendText:datadic[@"ServesInfo"] alignment:HLTextAlignmentLeft];
-
     [printer appendSeperatorLine];
 
 //    [printer appendQRCodeWithInfo:@""]// 不推荐，文本太长的话，二维码底部会显示不全
-    [printer appendQRCodeWithInfo:datadic[@"QRCodeURL"] size:6 alignment:HLTextAlignmentCenter];
-
+    [printer appendQRCodeWithInfo:datadic[@"QRCodeURL"] size:6 alignment:HLTextAlignmentCenter]; //size 调整二维码大小
 
     [printer appendNewLine];
-
     [printer appendText:datadic[@"FootTitle"] alignment:HLTextAlignmentCenter];
-
     [printer appendNewLine];
 
     return printer;
